@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar conta</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body class="Login">
+
+  <div id="container">
+    <!-- Topo -->
+    <div id="topo">
+      <h1 class="logo">Notícias cidade</h1>
+      <ul id="navegacao">
+        <li class="primeiro"><a id="home" href="index.html">Home</a></li>
+        <li><a id="login" href="login.html">Login</a></li>
+        <li><a id="Login" href="cadastro.html">Cadastrar</a></li>
+      </ul>
+    </div>
+
+    <!-- Conteúdo -->
+    <div id="conteudo" style="padding: 40px; text-align: center;">
+      <div class="caixa">
+        <h2>Criar Conta</h2>
+        <div class="caixa-conteudo">
+          <form id="formCadastro">
+            <label for="email" id="Email">Email:</label>
+            <input type="email" id="novoEmail" required><br>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="novaSenha" required><br>
+
+            <input class="submit" type="submit" value="Finalizar">
+          </form>
+          <p id="mensagemCadastro" class="success"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div id="container-rodape" style="clear: both;">
+    <div id="rodape">
+      &copy; Copyright 2024-2025 Notícias cidade
+    </div>
+  </div>
+
+  <!-- Alteração no nome do script -->
+  <script src="js/login.js"></script>
+</body>
+</html>
