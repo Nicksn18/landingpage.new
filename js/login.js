@@ -1,7 +1,7 @@
 // login.js
 
 document.getElementById("formCadastro").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevenir o envio do formulário para teste
+    event.preventDefault(); 
 
     // Captura os valores inseridos nos campos
     const email = document.getElementById("novoEmail").value;
@@ -16,7 +16,7 @@ document.getElementById("formCadastro").addEventListener("submit", function(even
         document.getElementById("mensagemCadastro").innerHTML = "<p style='color: red;'>A senha deve ter pelo menos 6 caracteres.</p>";
     } else {
         // Caso o formulário seja preenchido corretamente
-        document.getElementById("mensagemCadastro").innerHTML = "<p style='color: green;'>Cadastro realizado com sucesso! Verifique seu e-mail para mais informações.</p>";
+        document.getElementById("mensagemCadastro").innerHTML = "<p style='color: green;'>Login realizado com sucesso! Verifique seu e-mail para mais informações.</p>";
         
         // Limpa os campos após o cadastro (opcional)
         document.getElementById("formCadastro").reset();
